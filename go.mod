@@ -1,4 +1,4 @@
-module lo-dn/CKK
+module github.com/lo-dn/CKK
 
 go 1.16
 
