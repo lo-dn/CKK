@@ -20,9 +20,9 @@ type ckkNode struct {
 }
 
 type Result struct {
-	resDiff  int
-	resLeft  []int
-	resRight []int
+	ResDiff  int
+	ResLeft  []int
+	ResRight []int
 }
 
 func NewCkk(arr []int) (*Ckk, error) {
@@ -56,11 +56,11 @@ func (c *Ckk) Run() {
 	}
 
 	res := Result{
-		resDiff:  resNode.difference,
-		resRight: resNode.arr,
+		ResDiff:  resNode.difference,
+		ResRight: resNode.arr,
 	}
 
-	resNode.FillArraysTheResult(&res.resLeft, &res.resRight)
+	resNode.FillArraysTheResult(&res.ResLeft, &res.ResRight)
 
 	c.res = res
 }
